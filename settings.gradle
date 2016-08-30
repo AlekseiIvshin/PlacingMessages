@@ -1,1 +1,1 @@
-include ':placingMessagesLib', ':mylibrary'
+include ':placingMessagesLib'
