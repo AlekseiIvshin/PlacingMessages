@@ -1,7 +1,9 @@
 package com.eficksan.placingmessages;
 
 import com.eficksan.placingmessages.PlaceMessage;
+import com.eficksan.placingmessages.OperationCallback;
 import android.net.Uri;
+import android.ios.Bundle;
 
 interface IPlaceMessageRepository {
 
@@ -23,6 +25,6 @@ interface IPlaceMessageRepository {
     /**
     * Saves messages to CVS file and return uri to this file.
     */
-    Uri saveMessagesToCvs();
+    void saveMessagesToCvs(in OperationCallback callback);
 
 }
